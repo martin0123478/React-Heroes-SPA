@@ -32,7 +32,7 @@ describe('Pruebas en authReducer',()=>{
         }
        
     
-                const newState = authReducer(state,action)
-            expect(newState).toEqual({logged:false})
+        const newState = authReducer(state,action)
+        expect(newState).toEqual({logged:false})
     })
      })
