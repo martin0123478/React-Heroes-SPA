@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 import { AuthContext } from "../../src/auth/context/AuthContext"
 import { PublicRoute } from "../../src/router/PublicRoute"
 
@@ -16,7 +16,7 @@ describe('Pruebas en private route', () => {
             </AuthContext.Provider>
         )
 
-        //  screen.debug()
+        //screen.debug()
         expect(screen.getByText('Ruta Privada')).toBeTruthy()
     })
 })
